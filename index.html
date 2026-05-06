@@ -66,6 +66,29 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+  /* Hide MkDocs theme chrome and remove surrounding whitespace */
+  .navbar,
+  .md-header,
+  .wy-nav-top,
+  .wy-nav-side,
+  .wy-side-nav-search,
+  .wy-side-scroll {
+    display: none !important;
+  }
+  .container,
+  .col-md-9,
+  .col-md-12,
+  .md-main__inner,
+  .md-content,
+  .md-content__inner,
+  .wy-nav-content,
+  .wy-nav-content-wrap {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   :root {
     --bg: #0a0a0f;
     --surface: #12121a;
@@ -289,7 +312,7 @@
   /* ---- SPEAKERS ---- */
   #speakers { }
   .speakers-grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem;
   }
   .speaker-card {
     background: var(--surface); border: 1px solid var(--border);
@@ -792,5 +815,5 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2026-05-06 03:28:46.561751+00:00
+Build Date UTC : 2026-05-06 03:35:56.277277+00:00
 -->
